@@ -1,10 +1,12 @@
 import React from 'react';
-import {SafeAreaView, Text} from 'react-native';
+import {SafeAreaView, Text, Button} from 'react-native';
 
-function Member() {
+function Member({navigation}) {
   return (
     <SafeAreaView>
       <Text>Hello Member</Text>
+      <Button title="Detail" onPress={()=> navigation.navigate('MemberDetailScreen')}
+      />
     </SafeAreaView>
   );
 }
